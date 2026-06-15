@@ -132,6 +132,16 @@ Rules for small multiples:
 </table>
 ```
 
+## Layout safety (never clip, never bleed)
+
+The chart must fit its container with nothing cut off. Common failures and fixes:
+
+- Set `width="100%"` and a `viewBox` on every `<svg>`; let it scale, don't hard-pin a pixel width that overflows narrow columns.
+- Leave padding inside the `viewBox` for labels that extend past the plot (long category names, end-of-line value labels). Reserve ~120px left, ~40px right.
+- Wrap multi-chart pages in a container with `max-width` and `margin: 0 auto`; keep `overflow: visible` on the SVG so labels are not chopped, and confirm the page itself has no horizontal scroll.
+- For grids of cards or small multiples, use `grid-template-columns: repeat(auto-fit, minmax(...))` so cards reflow instead of bleeding off the right edge.
+- Before declaring done, open the file in a browser at the intended width and confirm no label, axis, or value is clipped.
+
 ## What to never include
 
 - `<svg>` with a `style="filter: drop-shadow(...)"` — chartjunk

@@ -202,6 +202,11 @@ export function Line({ children, ...rest }) {
 
 Then forbid `<Tooltip>`, `<CartesianGrid>`, `<Legend>` at the lint level if the team needs the discipline.
 
+Always wrap charts in `ResponsiveContainer` so nothing clips or bleeds at narrow
+widths, and leave enough `margin` (right ≥ 48, left ≥ 24) for end-of-line value
+labels. Open the rendered view at its real width and confirm no label or axis is
+cut off.
+
 ## What to never import
 
 - `recharts/Pie`, `recharts/PieChart`, `recharts/RadialBar`, `recharts/Radar`

@@ -1,6 +1,6 @@
 # Checklist
 
-Sixteen items. Walk through before declaring any chart done.
+Eighteen items. Walk through before declaring any chart done.
 
 ## Data
 
@@ -31,6 +31,11 @@ Sixteen items. Walk through before declaring any chart done.
 
 - [ ] The one accent color is actually applied to the focal data point, not left unused?
 - [ ] Data marks present where they help reading (dots on line endpoints, dot plots over bare bars)?
+
+## Layout
+
+- [ ] Nothing clipped, cut off, or bleeding outside its container or the page?
+- [ ] Container is responsive (width 100%, viewBox set) so it fits without horizontal scroll?
 
 ## Prose (reports, recaps, slides)
 

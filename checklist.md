@@ -1,6 +1,6 @@
 # Checklist
 
-Twelve items. Walk through before declaring any chart done.
+Fourteen items. Walk through before declaring any chart done.
 
 ## Data
 
@@ -26,3 +26,8 @@ Twelve items. Walk through before declaring any chart done.
 
 - [ ] Direct labels on data, not a separate legend (unless ≥ 5 categories)?
 - [ ] Numbers formatted readably (4.2M not 4,200,000)?
+
+## Prose (reports, recaps, slides)
+
+- [ ] No em-dashes, no drama, no hype verbs, no AI-slop jargon (see `report-voice.md`)?
+- [ ] Every label and caption named for the specific case, not a placeholder?

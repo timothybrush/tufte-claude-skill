@@ -22,13 +22,22 @@ When invoked, work through these in order:
 2. **Use `chart-selection.md`** to pick the chart type from the user's data and goal. Don't reach for a chart you know; reach for the one this table prescribes.
 3. **Apply `kill-list.md`** before rendering — strip the things that don't belong in any Tufte-compliant chart.
 4. **Check `before-after.html`** when the user wants to see the difference. Six side-by-side examples covering the cases AI tools default to badly.
-5. **Run `checklist.md`** before declaring the chart done. Twelve items, takes 30 seconds.
+5. **Read `report-voice.md`** when the output is a report, recap, or slide with prose around the chart. The writing can ruin a clean chart. Plain business English, no em-dashes, no AI slop.
+6. **Run `checklist.md`** before declaring the chart done. Fourteen items, takes 30 seconds.
 
 For a quick lookup, `cheatsheet.html` (and `cheatsheet.pdf`) is the one-page reference.
 
 ## Default behavior
 
 Tufte rules apply by default. If the user explicitly requests something on the kill list ("I need a pie chart for this board deck because the CFO wants one"), comply, but note the Tufte alternative in a one-line comment in the code or the response.
+
+## Prose around the chart
+
+When the output is a report, recap, or slide, the text matters as much as the
+chart. Write plain business English: no em-dashes, no drama or theatrics, no hype
+verbs, no AI-slop jargon. Name every label and caption for the specific case, not
+a placeholder. First the number, then what it means. See `report-voice.md` for
+the full kill/keep list. A clean chart wrapped in slop reads as slop.
 
 ## The kill list, summarized
 
@@ -66,7 +75,8 @@ These belong in most Tufte charts:
 | `chart-selection.md` | Data + goal → chart type decision table |
 | `kill-list.md` | What to remove from any chart |
 | `before-after.html` | Six side-by-side comparisons (open in browser) |
-| `checklist.md` | 12-item pre-publish check |
+| `report-voice.md` | Prose rules for reports/recaps/slides (no slop, no em-dashes) |
+| `checklist.md` | 14-item pre-publish check |
 | `cheatsheet.html` | One-page printable reference |
 | `cheatsheet.pdf` | Same, as PDF |
 | `presets/html-svg.md` | Style tokens + a working SVG bar chart, line chart, sparkline, small multiple |

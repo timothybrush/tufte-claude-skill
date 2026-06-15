@@ -1,6 +1,6 @@
 # Checklist
 
-Fourteen items. Walk through before declaring any chart done.
+Sixteen items. Walk through before declaring any chart done.
 
 ## Data
 
@@ -26,6 +26,11 @@ Fourteen items. Walk through before declaring any chart done.
 
 - [ ] Direct labels on data, not a separate legend (unless ≥ 5 categories)?
 - [ ] Numbers formatted readably (4.2M not 4,200,000)?
+
+## Not flat
+
+- [ ] The one accent color is actually applied to the focal data point, not left unused?
+- [ ] Data marks present where they help reading (dots on line endpoints, dot plots over bare bars)?
 
 ## Prose (reports, recaps, slides)
 

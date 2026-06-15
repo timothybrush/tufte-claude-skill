@@ -57,6 +57,8 @@ Things to remove from any Tufte-compliant chart unless the user explicitly overr
 | Saturated color on every bar | Fatigues eye, kills hierarchy | Gray for context, accent for focal |
 | More than 4 colors in one chart | Overload | Group small categories or use small multiples |
 | Color as decoration only | Meaningless visual difference | One color, used to signal |
+| Accent declared but never applied (all-gray, all-ink output) | Reads as flat; no point of focus | Apply the accent to the one focal data point |
+| Bare bars where the value, not the magnitude bar, is the message | Flat, heavy | Dot plot with a labeled point |
 
 ## Dashboard sins (specific)
 

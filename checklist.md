@@ -1,6 +1,6 @@
 # Checklist
 
-Eighteen items. Walk through before declaring any chart done.
+Twenty items. Walk through before declaring any chart done.
 
 ## Data
 
@@ -31,6 +31,10 @@ Eighteen items. Walk through before declaring any chart done.
 
 - [ ] The one accent color is actually applied to the focal data point, not left unused?
 - [ ] Data marks present where they help reading (dots on line endpoints, dot plots over bare bars)?
+
+## Readability
+
+- [ ] Type large enough to read at a glance: body ≥ 14px, axis ticks ≥ 12px, focal numbers ≥ 16px?
 
 ## Layout
 

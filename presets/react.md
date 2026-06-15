@@ -20,6 +20,9 @@ export const tufte = {
 };
 ```
 
+Type sizes default generous for readability: axis ticks ≥ 12px, labels ≥ 15px,
+focal numbers ≥ 16px. Scale up for slides and dashboards, never down.
+
 ## Recharts — what fits, what doesn't
 
 | Chart | Recharts? | Notes |
@@ -62,13 +65,13 @@ export function MAUChart() {
         dataKey="month"
         axisLine={{ stroke: tufte.gray3, strokeWidth: 0.5 }}
         tickLine={false}
-        tick={{ fill: tufte.gray3, fontSize: 10, fontFamily: tufte.fontMono }}
+        tick={{ fill: tufte.gray3, fontSize: 12, fontFamily: tufte.fontMono }}
         interval={9}  /* show first and last tick only */
       />
       <YAxis
         axisLine={{ stroke: tufte.gray3, strokeWidth: 0.5 }}
         tickLine={false}
-        tick={{ fill: tufte.gray3, fontSize: 10, fontFamily: tufte.fontMono }}
+        tick={{ fill: tufte.gray3, fontSize: 12, fontFamily: tufte.fontMono }}
         domain={["dataMin", "dataMax"]}  /* range frame */
         ticks={[Math.min(...data.map(d => d.mau)), Math.max(...data.map(d => d.mau))]}
       />
@@ -138,9 +141,9 @@ export function DotPlot({ data, focal }: { data: Datum[]; focal?: string }) {
   );
 }
 
-const tickStyle  = { fontFamily: tufte.fontMono, fontSize: 10, fill: tufte.gray3 };
-const labelStyle = { fontFamily: tufte.fontSerif, fontSize: 12, fill: tufte.ink };
-const valueStyle = { fontFamily: tufte.fontMono, fontSize: 11, fill: tufte.ink, fontWeight: 600 };
+const tickStyle  = { fontFamily: tufte.fontMono, fontSize: 12, fill: tufte.gray3 };
+const labelStyle = { fontFamily: tufte.fontSerif, fontSize: 15, fill: tufte.ink };
+const valueStyle = { fontFamily: tufte.fontMono, fontSize: 16, fill: tufte.ink, fontWeight: 600 };
 ```
 
 ## D3-in-React — slopegraph (before/after comparison)

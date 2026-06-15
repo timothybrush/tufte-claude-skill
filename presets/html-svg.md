@@ -18,12 +18,18 @@ Drop this `:root` block into any chart. These are the Tufte palette and type def
   --gray-3: #6b665d;   /* secondary text */
 }
 
-.tick   { font: 10px/1 "SF Mono", "Berkeley Mono", monospace; fill: var(--gray-3); }
-.label  { font: 12px/1.2 "Charter", Georgia, serif; fill: var(--ink); }
-.value  { font: 11px/1 "SF Mono", monospace; fill: var(--ink); font-weight: 600; }
+.tick   { font: 12px/1 "SF Mono", "Berkeley Mono", monospace; fill: var(--gray-3); }
+.label  { font: 15px/1.3 "Charter", Georgia, serif; fill: var(--ink); }
+.value  { font: 16px/1 "SF Mono", monospace; fill: var(--ink); font-weight: 600; }
+.value-focal { font: 16px/1 "SF Mono", monospace; fill: var(--accent); font-weight: 700; }
 .axis   { stroke: var(--gray-3); stroke-width: 0.5; fill: none; }
 .grid   { stroke: var(--gray-1); stroke-width: 0.5; }
 ```
+
+Type sizes are deliberately generous: charts get read at a glance and on shared
+screens, so default to readable, not cramped. Body text ≥ 14px, axis ticks ≥ 12px,
+focal numbers ≥ 16px. Scale up for slides and dashboards, never down. Put the
+accent on the one focal value with `.value-focal`.
 
 ## Sparkline (the smallest chart that works)
 
@@ -115,10 +121,10 @@ Rules for small multiples:
 <table style="border-collapse: collapse; font-family: Charter, serif;">
   <thead>
     <tr style="border-bottom: 0.5px solid #1a1a1a;">
-      <th style="text-align:left; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: #6b665d;">Metric</th>
-      <th style="text-align:right; font-size: 9px; text-transform: uppercase; color: #6b665d;">Now</th>
-      <th style="text-align:center; font-size: 9px; text-transform: uppercase; color: #6b665d;">10mo</th>
-      <th style="text-align:right; font-size: 9px; text-transform: uppercase; color: #6b665d;">vs Target</th>
+      <th style="text-align:left; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #6b665d;">Metric</th>
+      <th style="text-align:right; font-size: 11px; text-transform: uppercase; color: #6b665d;">Now</th>
+      <th style="text-align:center; font-size: 11px; text-transform: uppercase; color: #6b665d;">10mo</th>
+      <th style="text-align:right; font-size: 11px; text-transform: uppercase; color: #6b665d;">vs Target</th>
     </tr>
   </thead>
   <tbody>

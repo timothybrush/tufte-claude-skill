@@ -23,7 +23,7 @@ When invoked, work through these in order:
 3. **Apply `kill-list.md`** before rendering — strip the things that don't belong in any Tufte-compliant chart.
 4. **Check `before-after.html`** when the user wants to see the difference. Six side-by-side examples covering the cases AI tools default to badly.
 5. **Read `report-voice.md`** when the output is a report, recap, or slide with prose around the chart. The writing can ruin a clean chart. Plain business English, no em-dashes, no AI slop.
-6. **Run `checklist.md`** before declaring the chart done. Eighteen items, takes 30 seconds.
+6. **Run `checklist.md`** before declaring the chart done. Twenty items, takes 30 seconds.
 
 For a quick lookup, `cheatsheet.html` (and `cheatsheet.pdf`) is the one-page reference.
 
@@ -77,7 +77,7 @@ These belong in most Tufte charts:
 | `kill-list.md` | What to remove from any chart |
 | `before-after.html` | Six side-by-side comparisons (open in browser) |
 | `report-voice.md` | Prose rules for reports/recaps/slides (no slop, no em-dashes) |
-| `checklist.md` | 18-item pre-publish check |
+| `checklist.md` | 20-item pre-publish check |
 | `cheatsheet.html` | One-page printable reference |
 | `cheatsheet.pdf` | Same, as PDF |
 | `presets/html-svg.md` | Style tokens + a working SVG bar chart, line chart, sparkline, small multiple |
